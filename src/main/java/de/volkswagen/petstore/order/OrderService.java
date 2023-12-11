@@ -13,7 +13,7 @@ import de.volkswagen.petstore.pet.Pet;
 @Service
 public class OrderService {
 
-    private List<Order> orders = new ArrayList();
+    private List<Order> orders = new ArrayList<>();
 
     @Value("${petshop.is_black_friday}")
     private boolean isBlackFriday;

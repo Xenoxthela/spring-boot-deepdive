@@ -23,10 +23,10 @@ public class PetService { // implements InitializingBean, DisposableBean
 
     @PostConstruct
     public void created() throws Exception {
-        new Pet("Duke", PetType.DOG, 20, 900, "Golden Retriever", "a lot of walking");
-        new Pet("cat1", PetType.CAT, 15, 300, "typedescriptionCat", "husbandryCat");
-        new Pet("Bunny", PetType.RABBIT, 10, 40, "typeDescriptionRabbit", "husbandryRabbit");
-        new Pet("Khan", PetType.SNAKE, 10, 50, "typeDesSnkae", "husbbSnake");
+        pets.add(new Pet("Duke", PetType.DOG, 20, 900, "Golden Retriever", "a lot of walking"));
+        pets.add(new Pet("cat1", PetType.CAT, 15, 300, "typedescriptionCat", "husbandryCat"));
+        pets.add(new Pet("Bunny", PetType.RABBIT, 10, 40, "typeDescriptionRabbit", "husbandryRabbit"));
+        pets.add(new Pet("Khan", PetType.SNAKE, 10, 50, "typeDesSnkae", "husbbSnake"));
 
         System.out.println("PetService has been created");
     }

@@ -3,7 +3,9 @@ package de.volkswagen.petstore;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import de.volkswagen.petstore.pet.PetstoreApplication;
+
+@SpringBootTest(classes = PetstoreApplication.class) 
 class PetstoreApplicationTests {
 
 	@Test
